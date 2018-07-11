@@ -11,20 +11,20 @@ namespace HW.Models.ViewModels
         /// <summary>
         /// 頁碼
         /// </summary>
-        public string pageNo { get; set; }
+        public string PageNo { get; set; }
 
         /// <summary>
         /// 類別
         /// </summary>
         [Display(Name="類別")]
-        public string category { get; set; }
+        public string Category { get; set; }
 
         /// <summary>
         /// 日期
         /// </summary>
         [Display(Name= "日期")]
         [DisplayFormat(DataFormatString = "{0:yyyy-MM-dd}")]
-        public DateTime sdate { get; set; }
+        public DateTime Sdate { get; set; }
 
         /// <summary>
         /// 金額
