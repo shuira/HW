@@ -7,7 +7,7 @@
         <table class="table table-bordered table-hover">
             <tr>
                 <th>
-                    @Html.Label("#")
+                    #
                 </th>
                 <th>
                     @Html.DisplayNameFor(model => model.Category)
@@ -23,7 +23,6 @@
 
             @foreach (var item in Model)
             {
-                String s = item.Amount.ToString("###,###");
                 <tr>
                     <td>
                         @Html.DisplayFor(modelItem => item.PageNo)
@@ -32,14 +31,11 @@
                         @Html.DisplayFor(modelItem => item.Category)
                     </td>
                     <td>
-                      
                         @Html.DisplayFor(modelItem => item.Sdate)
                     </td>
                     <td>
-                        
-                        @Html.DisplayFor(modelItem=>s)
+                        @Html.DisplayFor(modelItem=>item.Amount.ToString("N0"))
                     </td>
-                   
                 </tr>
             }
         </table>

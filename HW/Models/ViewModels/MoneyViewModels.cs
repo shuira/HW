@@ -30,6 +30,8 @@ namespace HW.Models.ViewModels
         /// 金額
         /// </summary>
         [Display(Name= "金額")]
+        //[DisplayFormat(DataFormatString = "{0:N0}")]
+        //你已經知道 DisplayFormat 了，這裡加上去 HTML 就不用再做事情了
         public int Amount { get; set; }
     }
 }
