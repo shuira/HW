@@ -1,0 +1,47 @@
+﻿@model IEnumerable<HW.Models.ViewModels.MoneyViewModels>
+@{ 
+    Layout = null;
+}
+<div class="row">
+    <div class="col-md-12">
+        <table class="table table-bordered table-hover">
+            <tr>
+                <th>
+                    @Html.Label("#")
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.category)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.sdate)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.Amount)
+                </th>
+               
+            </tr>
+
+            @foreach (var item in Model)
+            {
+                String s = item.Amount.ToString("###,###");
+                <tr>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.pageNo)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.category)
+                    </td>
+                    <td>
+                      
+                        @Html.DisplayFor(modelItem => item.sdate)
+                    </td>
+                    <td>
+                        
+                        @Html.DisplayFor(modelItem=>s)
+                    </td>
+                   
+                </tr>
+            }
+        </table>
+    </div>
+</div>
