@@ -17,7 +17,7 @@ namespace HW.Controllers
         }
 
         [ChildActionOnly]
-        public ActionResult _List()
+        public ActionResult List()
         {
             List<MoneyViewModels> moneyList = new List<MoneyViewModels>();
 
