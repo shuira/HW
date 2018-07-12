@@ -13,17 +13,17 @@
                     @Html.DisplayNameFor(model => model.category)
                 </th>
                 <th>
-                    @Html.DisplayNameFor(model => model.sdate)
+                    @Html.DisplayNameFor(model => model.date)
                 </th>
                 <th>
-                    @Html.DisplayNameFor(model => model.Amount)
+                    @Html.DisplayNameFor(model => model.amount)
                 </th>
                
             </tr>
 
             @foreach (var item in Model)
             {
-                String s = item.Amount.ToString("###,###");
+                String amountFormat = item.amount.ToString("###,###");
                 <tr>
                     <td>
                         @Html.DisplayFor(modelItem => item.pageNo)
@@ -33,11 +33,11 @@
                     </td>
                     <td>
                       
-                        @Html.DisplayFor(modelItem => item.sdate)
+                        @Html.DisplayFor(modelItem => item.date)
                     </td>
                     <td>
                         
-                        @Html.DisplayFor(modelItem=>s)
+                        @Html.DisplayFor(modelItem=> amountFormat)
                     </td>
                    
                 </tr>

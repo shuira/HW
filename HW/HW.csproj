@@ -198,7 +198,7 @@
     <Content Include="Views\Money\Index.cshtml" />
     <Content Include="Views\Shared\_MoneyLayout.cshtml" />
     <Content Include="Views\Money\_ViewStart.cshtml" />
-    <Content Include="Views\Money\_List.cshtml" />
+    <Content Include="Views\Money\List.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

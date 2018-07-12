@@ -24,12 +24,12 @@ namespace HW.Models.ViewModels
         /// </summary>
         [Display(Name= "日期")]
         [DisplayFormat(DataFormatString = "{0:yyyy-MM-dd}")]
-        public DateTime sdate { get; set; }
+        public DateTime date { get; set; }
 
         /// <summary>
         /// 金額
         /// </summary>
         [Display(Name= "金額")]
-        public int Amount { get; set; }
+        public int amount { get; set; }
     }
 }

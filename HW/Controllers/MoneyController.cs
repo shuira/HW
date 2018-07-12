@@ -17,7 +17,7 @@ namespace HW.Controllers
         }
 
         [ChildActionOnly]
-        public ActionResult _List()
+        public ActionResult List()
         {
             List<MoneyViewModels> moneyList = new List<MoneyViewModels>();
 
@@ -26,9 +26,9 @@ namespace HW.Controllers
                 MoneyViewModels money = new MoneyViewModels
                 {
                     pageNo = (i + 1).ToString(),
-                    sdate = DateTime.Now.AddDays(-i),
+                    date = DateTime.Now.AddDays(-i),
                     category = "支出",
-                    Amount = (i+1) * 100
+                    amount = (i+1) * 100
                 };
 
                 moneyList.Add(money);
